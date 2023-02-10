@@ -1,27 +1,38 @@
 package actividad08;
 
-public class Estudiante {
-
+public class Arreglo {
 	
 	
+	
+	
+	public static int existeArre(int[] arreglo, int busqueda) {
+		  for (int x = 0; x < arreglo.length; x++) {
+		    if (arreglo[x] == busqueda) {
+		      return x;
+		    }
+		  }
+		  return -1;
+		}
 	
 	public int[] Numero () {
-		int l= 100;	
-	String[] estudiantes = new String [l];	
+
 		
+	int l= 10;
+	int numeroBus = 5;
 		
+	int[] miArreglo = new int[l];
 	
 	for (int x=0; x<=l; x++) {
-		
-		
-		System.out.println(estudiantes[x]);
+		miArreglo [9]= 5;	
+		//System.out.println(miArreglo[x]);
 	}	
 	
-	
-	
-	
-	
-	
+	  int eleBus = existeArre(miArreglo, numeroBus);
+	  if (eleBus == -1) {
+	    System.out.println("El elemento NO existe en el arreglo");
+	  } else {
+	    System.out.println("El elemento existe en la posición: " + eleBus);
+	  }
 	
 	
 	
@@ -30,10 +41,24 @@ public class Estudiante {
 	}
 	
 	
+public static String Nombres () {	
 	
 	
+	int ñ=20;
+	String[] arregloNombres = new String [ñ];
+		
 	
 	
+	for (int n=0; n<=ñ; n++) {
+		arregloNombres [0]="Francisco";	
+		
+		//System.out.println(arregloNombres[n]);
+		
+	}
 	
+	return null;
+}
 	
+
+
 }
